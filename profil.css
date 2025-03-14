@@ -423,9 +423,14 @@ position: absolute;
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-    .card-container {
+@media (max-width: 1024px) {
+    .container {
         flex-direction: column;
-        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Sembunyikan menu di HP */
     }
 }
