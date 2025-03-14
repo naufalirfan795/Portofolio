@@ -111,7 +111,7 @@ margin-left: -800px;
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
     margin-top: 150px;
     flex-wrap: wrap;
 }
@@ -412,6 +412,17 @@ position: absolute;
 .email {
     text-transform: capitalize;
 }
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hidden.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
